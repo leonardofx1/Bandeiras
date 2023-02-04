@@ -1,0 +1,19 @@
+form {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input__txt {
+    padding: 1rem;
+    border: none;
+}
+
+.input__select {
+    width: 150px;
+    border: none;
+    box-shadow: .1px .1px 5px rgba(0, 0, 0, 0.1);
+    padding: .7rem;
+    border-radius: 5px;
+  
+}

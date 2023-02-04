@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="assets/style/style.css">
     <title>REST-API-COUTRYS</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <h1>Bandeiras do Mundo</h1>
          <button>Dark Mode</button>
         </header>
     <main>
         <form >
-            <input type="text" placeholder="procurar um país">
-            <select name="" id="">
-                <optgroup>
-                        <option value="europa">Europa</option>
-                        <option value="africa">Africa</option>
-                        <option value="America">America</option>
-                        <option value="asia">Asia</option>
-                        <option value="oceania">Oceania</option>
-                </optgroup>
+            <input type="text" placeholder="procurar um país" class="input__txt">
+            <select name="" id="" class="input__select" label="ola">     
+                <option value="europa">Europa</option>
+                <option value="africa">Africa</option>
+                <option value="America">America</option>
+                <option value="asia">Asia</option>
         </select>
     </form>
-    <section>
-        <ul>
-            <li><img src="" alt=""></li>
-            <div>
-                <li><h2>lorem</h2></li>
-                <li>lorem: <span>152535</span></li>
-                <li>lorem: <span>152535</span></li>
-                <li>lorem: <span>152535</span></li>
-                 <li>lorem: <span>152535</span></li>
+    <section class="country">
+        <ul class="card__container">
+            <li><img class="card__img" src=  'https://flagcdn.com/w320/ba.png' alt=""></li>
+            <div class="card__corpo">
+                <li><h2 class="card__pais">lorem</h2></li>
+                <li class="card__populacao">lorem: <span>152535</span></li>
+                <li class="card__regiao">lorem: <span>152535</span></li>
+                <li class="card__capital">lorem: <span>152535</span></li>
+            </div>
+        </ul>
+        <ul class="card__container">
+            <li><img class="card__img" src=  'https://flagcdn.com/w320/ba.png' alt=""></li>
+            <div class="card__corpo">
+                <li><h2 class="card__pais">lorem</h2></li>
+                <li class="card__populacao">lorem: <span>152535</span></li>
+                <li class="card__regiao">lorem: <span>152535</span></li>
+                <li class="card__capital">lorem: <span>152535</span></li>
+            </div>
+        </ul>  <ul class="card__container">
+            <li><img class="card__img" src=  'https://flagcdn.com/w320/ba.png' alt=""></li>
+            <div class="card__corpo">
+                <li><h2 class="card__pais">lorem</h2></li>
+                <li class="card__populacao">lorem: <span>152535</span></li>
+                <li class="card__regiao">lorem: <span>152535</span></li>
+                <li class="card__capital">lorem: <span>152535</span></li>
+            </div>
+        </ul>  <ul class="card__container">
+            <li><img class="card__img" src=  'https://flagcdn.com/w320/ba.png' alt=""></li>
+            <div class="card__corpo">
+                <li><h2 class="card__pais">lorem</h2></li>
+                <li class="card__populacao">lorem: <span>152535</span></li>
+                <li class="card__regiao">lorem: <span>152535</span></li>
+                <li class="card__capital">lorem: <span>152535</span></li>
             </div>
         </ul>
     </section>
