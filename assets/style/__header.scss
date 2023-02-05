@@ -8,6 +8,10 @@
     box-shadow: .1px .1px 1px rgba(0, 0, 0, 0.234);
     flex-wrap: wrap;
 }
+.cabecalho__dark {
+    background-color: #2b3743;
+    color:white;
+}
 .btn__mode {
     border:none;
      width: 110px;
@@ -15,7 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fafafa;
+    background-color: #fafafa00;
     font-weight: bold;
     cursor:pointer;
+    color: inherit;
 }
+

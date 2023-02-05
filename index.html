@@ -8,18 +8,18 @@
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>REST-API-COUTRYS</title>
 </head>
-<body>
+<body data-js="body" ">
     <header class="cabecalho">
         <h1>Bandeiras do Mundo</h1>
          <button class="btn__mode">
-            <span class="material-symbols-outlined">
-            dark_mode
-            </span> Dark Mode</button>
+            <span class="material-symbols-outlined dark__mode"  data-js="iconThema">
+         
+            </span>Dark Mode</button>
         </header>
-    <main>
+    <main class="container__principal ">
         <form >
             <input type="text" placeholder="procurar um país" class="input__txt">
-            <select name="" id="" class="input__select" label="ola">     
+            <select name="" id="" class="input__select " label="ola">     
                 <option value="europa">Europa</option>
                 <option value="africa">Africa</option>
                 <option value="America">America</option>
@@ -44,7 +44,8 @@
                 <li class="card__regiao">lorem: <span>152535</span></li>
                 <li class="card__capital">lorem: <span>152535</span></li>
             </div>
-        </ul>  <ul class="card__container">
+        </ul> 
+        <ul class="card__container">
             <li><img class="card__img" src=  'https://flagcdn.com/w320/ba.png' alt=""></li>
             <div class="card__corpo">
                 <li><h2 class="card__pais">lorem</h2></li>

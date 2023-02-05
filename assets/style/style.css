@@ -1,6 +1,13 @@
-main {
+.container__principal {
   max-width: 90%;
   margin: 0 auto;
+}
+
+.body__dark {
+  background-color: #202d36;
+}
+
+.body__light {
   background-color: #fafafa;
 }
 
@@ -9,6 +16,15 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.card__dark {
+  background-color: #2b3743;
+  color: white;
+}
+
+.card__light {
+  background-color: white;
 }
 
 .card__container {
@@ -20,7 +36,6 @@ main {
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 3rem;
-  background-color: white;
   box-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.705);
 }
 
@@ -48,6 +63,12 @@ main {
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .country {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .cabecalho {
   width: 100%;
   display: flex;
@@ -59,6 +80,11 @@ main {
   flex-wrap: wrap;
 }
 
+.cabecalho__dark {
+  background-color: #2b3743;
+  color: white;
+}
+
 .btn__mode {
   border: none;
   width: 110px;
@@ -66,9 +92,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fafafa;
+  background-color: rgba(250, 250, 250, 0);
   font-weight: bold;
   cursor: pointer;
+  color: inherit;
 }
 
 form {
@@ -86,6 +113,27 @@ form {
   width: 450px;
   min-width: auto;
   box-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, 0.146);
+}
+
+.input__light {
+  background-color: white;
+}
+
+.input__dark {
+  background-color: #2b3743;
+  color: white;
+}
+.input__dark::-moz-placeholder {
+  color: white;
+  font-weight: 400;
+}
+.input__dark:-ms-input-placeholder {
+  color: white;
+  font-weight: 400;
+}
+.input__dark::placeholder {
+  color: white;
+  font-weight: 400;
 }
 
 .input__select {

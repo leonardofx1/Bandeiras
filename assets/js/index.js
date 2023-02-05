@@ -1,2 +1,18 @@
 const fetchData = () => fetch(`https://restcountries.com/v3.1/region/europe`)
 fetchData().then(r => r.json()).then(r => console.log(r))
+const icon = document.querySelector('[data-js="iconThema"]')
+const btn = document.querySelector('.btn__mode')
+const body = document.querySelector('[data-js="body"]')
+const card = document.querySelector('.card__container')
+const cabecalho = document.querySelector('.cabecalho')
+const inputTxt = document.querySelector('.input__txt')
+const inputSelect = document.querySelector('.input__select')
+
+btn.addEventListener('click', e => {
+    body.classList.toggle('body__dark')
+    card.classList.toggle('card__dark')
+    cabecalho.classList.toggle('cabecalho__dark')
+    inputSelect.classList.toggle('input__dark')
+    inputTxt.classList.toggle('input__dark')
+    console.log('oi')
+})
