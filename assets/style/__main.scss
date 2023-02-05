@@ -1,6 +1,7 @@
 main {
     max-width:90%;
     margin: 0 auto;
+    background-color: #fafafa;
 }
 
 .country {
@@ -19,6 +20,8 @@ main {
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 3rem;
+    background-color: #ffffffff;
+    box-shadow: .1px .1px 1px rgba(0, 0, 0, 0.705);
 }
 
 .card__pais {

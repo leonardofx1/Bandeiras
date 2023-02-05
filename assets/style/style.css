@@ -1,6 +1,7 @@
 main {
   max-width: 90%;
   margin: 0 auto;
+  background-color: #fafafa;
 }
 
 .country {
@@ -19,6 +20,8 @@ main {
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 3rem;
+  background-color: white;
+  box-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.705);
 }
 
 .card__pais {
@@ -50,9 +53,22 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: none;
   box-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.234);
+  flex-wrap: wrap;
+}
+
+.btn__mode {
+  border: none;
+  width: 110px;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 form {
@@ -60,11 +76,16 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .input__txt {
   padding: 1rem;
   border: none;
+  width: 450px;
+  min-width: auto;
+  box-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, 0.146);
 }
 
 .input__select {

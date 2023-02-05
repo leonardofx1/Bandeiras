@@ -3,7 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border: none;
     box-shadow: .1px .1px 1px rgba(0, 0, 0, 0.234);
+    flex-wrap: wrap;
+}
+.btn__mode {
+    border:none;
+     width: 110px;
+     padding: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fafafa;
+    font-weight: bold;
+    cursor:pointer;
 }
