@@ -34,6 +34,7 @@ const creatCard = (data) => {
 }
 const getData =( async () => {
     const response = await fetchApi()
+    console.log(response)
     const dataCard = response.map(( {name,population,region,capital,flags})=> [name,population,region,capital,flags])
     creatCard(dataCard)
 })()

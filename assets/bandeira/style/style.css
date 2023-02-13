@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.body__dark {
+  background-color: #202d36;
+}
+
+.cabecalho__dark {
+  background-color: #2b3743;
+  color: white;
+}
+
+.cabecalho {
+  height: 50px;
+  background-color: inherit;
+}
+.cabecalho .cabecalho__container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.cabecalho .dark__mode {
+  border: none;
+  font-size: 1.1rem;
+  background-color: inherit;
+  font-weight: 500;
+  color: inherit;
+}
+
+.btn {
+  width: 85%;
+  margin: 3rem auto;
+}
+.btn button {
+  width: 100px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.container__card {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card__img, .card__corpo {
+  width: 50%;
+}
+
+.card__img img {
+  width: 80%;
+}
+
+.card__corpo {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pais {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */
