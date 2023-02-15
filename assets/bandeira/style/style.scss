@@ -51,7 +51,9 @@
     width: 85%;
     margin: 0 auto;
     display: flex;
-
+    position: relative;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 .card__img, .card__corpo {
@@ -59,9 +61,12 @@
 }
 
 .card__img {
+    min-width: 320px;
     img {
-        width: 80%;
-        height: 100%;
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+        height: auto;
     }
 }
 .card__corpo {
@@ -69,10 +74,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow:row  wrap;
+    height: auto;
+
 }
 
 .card__desc {
     line-height: 2rem;
+    order: 2;
+    min-width: 200px;
     li {
         color: white;
     }
@@ -80,4 +90,54 @@
 
 .pais {
     margin-bottom: 1rem;
+}
+.fronteira {
+    display: flex;
+    position: absolute;
+    bottom: -30px;
+    flex-wrap: wrap;
+    align-items: center;
+ & li {
+    color:white;
+    font-size: 1.3rem;
+    margin: 15px;
+    position: relative;
+    left: -15px; 
+ }
+ .pais__fronteira {
+    color:white;
+    padding: .4rem;
+    border-radius: 5px;
+    background-color: #2b3743;
+    width: 70px;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: .3px .3px  15px#202b37;
+ }
+}
+
+@media screen and (max-width: 800px) {
+    .container__card {
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 90vh;
+        .card__img {
+            min-width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .card__corpo {
+            min-width: 320px;
+        }
+    }
+    .fronteira {
+        flex-direction: column;
+        left: 0;
+        margin-top: 1rem;
+        bottom: -50px;
+        li {
+            margin-bottom: 1rem;
+        }
+    }
 }
