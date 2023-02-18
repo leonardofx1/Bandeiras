@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wPidth=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Bandeira detalhe</title>
-</head>
-<body class="body__dark">
-    <header class="cabecalho cabecalho__dark">
-        <div class="cabecalho__container">
-            <h2>onde no mundo</h2> <button class="dark__mode" >Dark Mode</button>
-        </div>
-     </header>
-    <main>
-        <div class="btn"><button>Voltar</button></div>
-        <ul class="container__card">
-            <li class="card__img"><img  src="https://flagcdn.com/w320/nr.png" alt="bandeira"></li>
-            <div class="card__corpo">
-              
-                <div class="card__desc">
-                    <li><h1 class="pais">Pais</h1></li>
-                    <li>Nome Nativo:<span></span></li>
-                    <li>População:<span></span></li>
-                    <li>Região:<span></span></li>
-                    <li>Sub Região<span></span></li>
-                    <li>Capital:<span></span></li>
-                </div>
-                <div class="card__desc">
-                    <li>Domínio de nível superior:<span></span></li>
-                    <li>Moeda:<span></span></li>
-                    <li>Lìngua:<span></span></li>
-                </div>
-                   <div class="fronteira"><li> paises fronteiriços:</li><div><span class="pais__fronteira">Brasil</span><span class="pais__fronteira">Brasil</span><span class="pais__fronteira">Brasil</span></div></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="wPidth=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Bandeira detalhe</title>
+    </head>
+    <body class="body body__dark">
+        <header class="cabecalho dark">
+            <div class="cabecalho__container">
+                <h2>onde no mundo</h2> <button data-js="dark-mode"
+                    class="dark__mode dark">Dark Mode</button>
             </div>
-        </ul>
-    </main>
+        </header>
+        <main>
+            <div class="btn "><button data-js="btn-voltar" class="dark">Voltar</button></div>
+            <ul class="container__card">
+                <li class="card__img"><img src="https://flagcdn.com/w320/nr.png"
+                        alt="bandeira"></li>
+                <div class="card__corpo">
 
-</body>
+                    <div class="card__desc text__dark" data-js="texto__desc">
+                        <li><h1 class="pais">Pais</h1></li>
+                        <li>Nome Nativo:<span></span></li>
+                        <li>População:<span></span></li>
+                        <li>Região:<span></span></li>
+                        <li>Sub Região<span></span></li>
+                        <li>Capital:<span></span></li>
+                    </div>
+                    <div class="card__desc text__dark" data-js="texto__desc">
+                        <li>Domínio de nível superior:<span></span></li>
+                        <li>Moeda:<span></span></li>
+                        <li>Lìngua:<span></span></li>
+                    </div>
+                    <div class="fronteira text__dark" data-js="texto__desc"><li> paises fronteiriços:</li><div><span
+                                class="pais__fronteira dark">Brasil</span><span
+                                class="pais__fronteira dark">Brasil</span><span
+                                class="pais__fronteira dark">Brasil</span></div></div>
+                </div>
+            </ul>
+        </main>
+        <script src="js/darkMode.js"></script>
+    </body>
 </html>

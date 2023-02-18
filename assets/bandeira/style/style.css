@@ -5,48 +5,6 @@
   list-style: none;
 }
 
-.body__dark {
-  background-color: #202d36;
-}
-
-.cabecalho__dark {
-  background-color: #2b3743;
-  color: white;
-}
-
-.cabecalho {
-  height: 50px;
-  background-color: inherit;
-}
-.cabecalho .cabecalho__container {
-  width: 85%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.cabecalho .dark__mode {
-  border: none;
-  font-size: 1.1rem;
-  background-color: inherit;
-  font-weight: 500;
-  color: inherit;
-}
-
-.btn {
-  width: 85%;
-  margin: 3rem auto;
-}
-.btn button {
-  width: 100px;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #2b3743;
-  color: white;
-}
-
 .container__card {
   width: 85%;
   margin: 0 auto;
@@ -65,7 +23,7 @@
 }
 .card__img img {
   width: 100%;
-  min-width: 320px;
+  min-width: 200px;
   max-width: 500px;
   height: auto;
 }
@@ -84,9 +42,6 @@
   order: 2;
   min-width: 200px;
 }
-.card__desc li {
-  color: white;
-}
 
 .pais {
   margin-bottom: 1rem;
@@ -100,26 +55,25 @@
   align-items: center;
 }
 .fronteira li {
-  color: white;
   font-size: 1.3rem;
   margin: 15px;
   position: relative;
   left: -15px;
 }
 .fronteira .pais__fronteira {
-  color: white;
   padding: 0.4rem;
   border-radius: 5px;
-  background-color: #2b3743;
-  width: 70px;
+  min-width: 70px;
+  max-width: auto;
   margin: 0 10px;
   text-align: center;
-  box-shadow: 0.3px 0.3px 15px #202b37;
+  box-shadow: 0.3px 0.3px 10px #202b37;
 }
 
 @media screen and (max-width: 800px) {
   .container__card {
     flex-direction: column;
+    max-width: 100%;
     justify-content: space-around;
     min-height: 90vh;
   }
@@ -141,4 +95,56 @@
   .fronteira li {
     margin-bottom: 1rem;
   }
+}
+.body {
+  background-color: #fafafa;
+}
+
+.body__dark {
+  background-color: #202d36;
+}
+
+.cabecalho {
+  height: 50px;
+  box-shadow: 0.2px 0.2px 5px rgba(0, 0, 0, 0.583);
+  background-color: inherit;
+}
+.cabecalho .cabecalho__container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.cabecalho .dark__mode {
+  border: none;
+  font-size: 1.1rem;
+  background-color: inherit;
+  font-weight: 500;
+}
+
+.dark {
+  background-color: #2b3743;
+  color: white;
+}
+
+.text__dark {
+  color: white;
+}
+
+.btn {
+  width: 85%;
+  margin: 3rem auto;
+}
+.btn button {
+  width: 100px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0.3px 0.3px 10px #202b37;
+}
+
+button {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
