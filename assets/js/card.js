@@ -41,7 +41,7 @@ const fetchData = () => {
 const showCard = (card) => {
         country.append(card)
 }
-const local = () =>  location.href ='file:///C:/Users/Administrator/Desktop/Bandeiras%20-%20Copy/assets/bandeira/bandeira.html'
+const local = () =>  location.href ='assets/bandeira/index.html'
 
 const creatCard = ([name, population, region, capital, flags]) => {
     const ul = creatElement('ul', 'card__container')

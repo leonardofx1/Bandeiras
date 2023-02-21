@@ -13,7 +13,7 @@ const darkMode = (tag, classDark ) => {
 }
 
 btnVoltar.addEventListener('click', () => {
-    location.href = 'file:///C:/Users/Administrator/Desktop/Bandeiras%20-%20Copy/index.html'
+    location.href = 'https://rest-coutry-fx.netlify.app'
 })
 
 btnDark.addEventListener('click', () => {
