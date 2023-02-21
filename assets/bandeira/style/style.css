@@ -42,25 +42,19 @@
   order: 2;
   min-width: 200px;
 }
+.card__desc li {
+  font-weight: 800;
+}
+.card__desc li span {
+  margin: 0 5px;
+  font-weight: 200;
+}
 
 .pais {
   margin-bottom: 1rem;
 }
 
-.fronteira {
-  display: flex;
-  position: absolute;
-  bottom: -30px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.fronteira li {
-  font-size: 1.3rem;
-  margin: 15px;
-  position: relative;
-  left: -15px;
-}
-.fronteira .pais__fronteira {
+.pais__fronteira {
   padding: 0.4rem;
   border-radius: 5px;
   min-width: 70px;
@@ -86,13 +80,7 @@
   .container__card .card__corpo {
     min-width: 320px;
   }
-  .fronteira {
-    flex-direction: column;
-    left: 0;
-    margin-top: 1rem;
-    bottom: -50px;
-  }
-  .fronteira li {
+  li {
     margin-bottom: 1rem;
   }
 }

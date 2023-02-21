@@ -13,8 +13,7 @@ const darkMode = (tag, classDark ) => {
 }
 
 btnVoltar.addEventListener('click', () => {
-    location.href = 'file:///C:/Users/Administrator/Desktop/Bandeiras/index.html'
-    console.log('btn')
+    location.href = 'file:///C:/Users/Administrator/Desktop/Bandeiras%20-%20Copy/index.html'
 })
 
 btnDark.addEventListener('click', () => {
@@ -25,4 +24,3 @@ btnDark.addEventListener('click', () => {
     darkMode(btnDark, 'dark')
     textoDesc.forEach(item => darkMode(item, 'text__dark'))
 })
-

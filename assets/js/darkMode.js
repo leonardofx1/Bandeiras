@@ -4,6 +4,7 @@ const body = document.querySelector('[data-js="body"]')
 const cabecalho = document.querySelector('.cabecalho')
 const inputTxt = document.querySelector('.input__txt')
 const inputSelect = document.querySelector('.input__select')
+const card = document.querySelectorAll('.card__container')
 
 const cardDark =  () =>{
     const card = document.querySelectorAll('.card__container')

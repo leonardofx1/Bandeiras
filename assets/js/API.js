@@ -13,4 +13,3 @@ const fetchApi = async () =>{
      alert(`Erro: ${error.messege}`)
  }
 }
-
