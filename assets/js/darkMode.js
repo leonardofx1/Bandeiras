@@ -6,15 +6,22 @@ const inputTxt = document.querySelector('.input__txt')
 const inputSelect = document.querySelector('.input__select')
 const card = document.querySelectorAll('.card__container')
 
-const cardDark =  () =>{
-    const card = document.querySelectorAll('.card__container')
-    const cardDark = [...card].forEach(card => card.classList.toggle('card__dark'))
+const toggleClass = (ele, func) => {
+    ele.classList.toggle(func)
 }
 
-btn.addEventListener('click', e => {
-    body.classList.toggle('body__dark')
-    cabecalho.classList.toggle('cabecalho__dark')
+const cardDark =  () =>{
+    const card = document.querySelectorAll('.card__container')
+    const cardDark = [...card].forEach(card => toggleClass(card,'card__dark'))
+}
+
+
+const handleClickDark =  e => {
+    toggleClass(body,'body__dark')
+    toggleClass(cabecalho,'cabecalho__dark')
+    toggleClass(inputSelect,'input__dark')
+    toggleClass(inputTxt,'input__dark')
     cardDark()
-    inputSelect.classList.toggle('input__dark')
-    inputTxt.classList.toggle('input__dark')
-})
+}
+
+btn.addEventListener('click',handleClickDark)

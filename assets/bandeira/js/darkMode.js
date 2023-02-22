@@ -16,11 +16,13 @@ btnVoltar.addEventListener('click', () => {
     location.href = 'https://rest-coutry-fx.netlify.app'
 })
 
-btnDark.addEventListener('click', () => {
+const handleClickDArkMode =  () => {
     fronteiras.forEach((item) => darkMode(item,'dark'))
     darkMode(body, 'body__dark')
     darkMode(voltar, 'dark')
     darkMode(cabecalho, 'dark')
     darkMode(btnDark, 'dark')
     textoDesc.forEach(item => darkMode(item, 'text__dark'))
-})
+}
+
+btnDark.addEventListener('click',handleClickDArkMode)

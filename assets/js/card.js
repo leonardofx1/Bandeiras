@@ -6,7 +6,7 @@ const creatElement = (el, clas) => {
     return elemento
 }
 
-const fetchData = () => {
+const dataCards = () => {
     let dataCard = [];
 
     const fetch = async () => {
@@ -35,13 +35,23 @@ const fetchData = () => {
     return { fetch, createCards,filtroDetail};
   };
   
-  const data = fetchData();
+  const data = dataCards
+();
   data.fetch().then(() => data.createCards());
 
 const showCard = (card) => {
         country.append(card)
 }
-const local = () =>  location.href ='assets/bandeira/index.html'
+const linkPage = () =>  location.href ='assets/bandeira/index.html'
+
+const handleinfoPais = (e) => {
+  const value = e.currentTarget.getAttribute('value');
+
+  data.filtroDetail(value)
+  
+  setTimeout(linkPage,100)
+
+}
 
 const creatCard = ([name, population, region, capital, flags]) => {
     const ul = creatElement('ul', 'card__container')
@@ -67,15 +77,10 @@ const creatCard = ([name, population, region, capital, flags]) => {
     ul.append(cardCorpo)
     ul.setAttribute('value', name.common)
 
-    ul.addEventListener('click', (e) => {
-        const value = e.currentTarget.getAttribute('value');
-        console.log(value)
-        data.filtroDetail(value)
-       setTimeout(local,100)
-    
-    });
+    ul.addEventListener('click',handleinfoPais );
+
     showCard(ul)
- 
+
 }
 
 

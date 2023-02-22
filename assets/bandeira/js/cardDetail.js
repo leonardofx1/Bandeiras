@@ -9,15 +9,15 @@ const dominio = document.querySelector('[data-js="dominio"]')
 const moeda = document.querySelector('[ data-js="moeda"]')
 const linguagem = document.querySelector('[data-js="linguagem"]')
 
+const toTransformKey = prop => Object.keys(prop)
+
+const [cardDetail] =  JSON.parse( localStorage.getItem('pais'))
+const [chave] = toTransformKey(cardDetail.name.nativeName)
+const [chaveMoeda] =   toTransformKey(cardDetail.currencies)
+const [chaveIndioma] = toTransformKey(cardDetail.languages)
 
 
-const [cardDetail]=  JSON.parse( localStorage.getItem('pais'))
-const [chave]= Object.keys(cardDetail.name.nativeName)
-const [chaveMoeda] =   Object.keys(cardDetail.currencies)
-const [chaveIndioma] = Object.keys(cardDetail.languages)
- console.log( chaveIndioma,cardDetail)
-
-const card = () => {
+const cardShowInfos = () => {
     const imgWEb =  cardDetail.flags.png
     img.setAttribute('src', imgWEb)
     pais.textContent= cardDetail.name.common
@@ -30,4 +30,4 @@ const card = () => {
     moeda.textContent = cardDetail.currencies[chaveMoeda].name
     linguagem.textContent = cardDetail.languages[chaveIndioma]
 }
-card()
+cardShowInfos()
