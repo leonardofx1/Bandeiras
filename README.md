@@ -5,6 +5,9 @@ Além disso, a página deve permitir que o usuário clique em um país para ser 
 
 O objetivo do projeto é desenvolver habilidades em requisições a APIs e manipulação de dados, além de praticar o desenvolvimento de páginas web responsivas e intuitivas para o usuário.
 
+## link da página
+[https://rest-coutry-fx.netlify.app](https://rest-coutry-fx.netlify.app)
+
 ## Tecnologias Utilizadas
 Para a implementação desse projeto, serão utilizadas as seguintes tecnologias:
 
